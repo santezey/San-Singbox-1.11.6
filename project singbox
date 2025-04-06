@@ -1,0 +1,331 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "remote-dns",
+        "address": "https://family.cloudflare-dns.com/dns-query",
+        "address_resolver": "direct-dns",
+        "strategy": "ipv4_only"
+      },
+      {
+        "tag": "direct-dns",
+        "address": "local",
+        "strategy": "ipv4_only"
+      },
+      {
+        "tag": "dns-final",
+        "address": "local",
+        "address_resolver": "dns-local",
+        "strategy": "ipv4_only"
+      },
+      {
+        "tag": "dns-local",
+        "address": "local"
+      },
+      {
+        "tag": "dns-block",
+        "address": "rcode://success"
+      }
+    ],
+    "rules": [
+      {
+        "domain": [
+          "family.cloudflare-dns.com",
+          "bug.mu"
+        ],
+        "server": "direct-dns"
+      }
+    ],
+    "final": "dns-final",
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "mtu": 1400,
+      "inet4_address": "172.19.0.1/30",
+      "inet6_address": "fdfe:dcba:9876::1/126",
+      "auto_route": true,
+      "strict_route": true,
+      "endpoint_independent_nat": true,
+      "stack": "mixed",
+      "sniff": true
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "Internet",
+      "type": "selector",
+      "outbounds": [
+        "Best Latency",
+        "🇮🇩 (ID) google LLC.com",
+        "🇮🇩 (ID) CV RumahWeb",
+        "🇮🇩 (ID) Amazon.com",
+        "🇮🇩 (ID) alibaba.com",
+        "🏴‍☠️ (SG) melbikomnas",
+        "🏴‍☠️ (SG) Digital Ocean",
+        "🇲🇾 (MY) Gigabit Hosting",
+        "direct"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "Best Latency",
+      "outbounds": [
+        "🇮🇩 (ID) google LLC.com",
+        "🇮🇩 (ID) CV RumahWeb",
+        "🇮🇩 (ID) Amazon.com",
+        "🇮🇩 (ID) alibaba.com",
+        "🏴‍☠️ (SG) melbikomnas",
+        "🏴‍☠️ (SG) Digital Ocean",
+        "🇲🇾 (MY) Gigabit Hosting",
+        "direct"
+      ],
+      "url": "https://ping.bexnxx.us.kg",
+      "interval": "30s"
+    },
+{
+      "type": "vless",
+      "tag": "🇮🇩 (ID) google LLC.com",
+      "domain_strategy": "ipv4_only",
+      "server": "investor.fb.com",
+      "server_port": 443,
+      "uuid": "e0415eb2-4245-42e0-9db7-94bad8f682c1",
+      "tls": {
+        "enabled": true,
+        "server_name": "violetvpn.biz.id",
+        "insecure": true
+      },
+      "multiplex": {
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/id-gcp",
+        "headers": {
+          "Host": "violetvpn.biz.id"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+{
+      "type": "vless",
+      "tag": "🇮🇩 (ID) Amazon.com",
+      "domain_strategy": "ipv4_only",
+      "server": "investor.fb.com",
+      "server_port": 443,
+      "uuid": "aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1",
+      "tls": {
+        "enabled": true,
+        "server_name": "privasi.bmkg.xyz",
+        "insecure": true
+      },
+      "multiplex": {
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Free-CF-Proxy-152.32.181.246-44070",
+        "headers": {
+          "Host": "privasi.bmkg.xyz"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+{
+      "type": "vless",
+      "tag": "🇮🇩 (ID) CV RumahWeb",
+      "domain_strategy": "ipv4_only",
+      "server": "investor.fb.com",
+      "server_port": 443,
+      "uuid": "aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1",
+      "tls": {
+        "enabled": true,
+        "server_name": "free.aloalo.my.id",
+        "insecure": true
+      },
+      "multiplex": {
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Free/TG-at-XionAlva/203.194.112.119-8443",
+        "headers": {
+          "Host": "free.aloalo.my.id"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+{
+      "type": "vless",
+      "tag": "🇮🇩 (ID) alibaba.com",
+      "domain_strategy": "ipv4_only",
+      "server": "investor.fb.com",
+      "server_port": 443,
+      "uuid": "2a7641aa-ce02-45fd-996a-1f366b8c9eb5",
+      "tls": {
+        "enabled": true,
+        "server_name": "nautica.foolvpn.me",
+        "insecure": true
+      },
+      "multiplex": {
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/47.74.254.191-8900",
+        "headers": {
+          "Host": "nautica.foolvpn.me"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+{
+      "type": "vless",
+      "tag": "🏴‍☠️ (SG) melbikomnas",
+      "domain_strategy": "ipv4_only",
+      "server": "investor.fb.com",
+      "server_port": 443,
+      "uuid": "aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1",
+      "tls": {
+        "enabled": true,
+        "server_name": "privasi.bmkg.xyz",
+        "insecure": true
+      },
+      "multiplex": {
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Free-CF-Proxy-91.192.81.154-2053",
+        "headers": {
+          "Host": "privasi.bmkg.xyz"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+{
+      "type": "vless",
+      "tag": "🏴‍☠️ (SG) Digital Ocean",
+      "domain_strategy": "ipv4_only",
+      "server": "investor.fb.com",
+      "server_port": 443,
+      "uuid": "aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1",
+      "tls": {
+        "enabled": true,
+        "server_name": "privasi.bmkg.xyz",
+        "insecure": true
+      },
+      "multiplex": {
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Free-CF-Proxy-104.248.145.216-443",
+        "headers": {
+          "Host": "privasi.bmkg.xyz"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+{
+      "type": "vless",
+      "tag": "🇲🇾 (MY) Gigabit Hosting",
+      "domain_strategy": "ipv4_only",
+      "server": "investor.fb.com",
+      "server_port": 443,
+      "uuid": "ad573d2c-fea4-4903-9ca6-134cf3dc988c",
+      "tls": {
+        "enabled": true,
+        "server_name": "violetvpn.biz.id",
+        "insecure": true
+      },
+      "multiplex": {
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/my-gb",
+        "headers": {
+          "Host": "violetvpn.biz.id"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "direct",
+      "tag": "bypass"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "port": 53,
+        "outbound": "dns-out"
+      },
+      {
+        "inbound": "dns-in",
+        "outbound": "dns-out"
+      },
+      {
+        "network": "udp",
+        "port": 443,
+        "outbound": "block"
+      },
+      {
+        "source_ip_cidr": [
+          "224.0.0.0/3",
+          "ff00::/8"
+        ],
+        "ip_cidr": [
+          "224.0.0.0/3",
+          "ff00::/8"
+        ],
+        "outbound": "block"
+      }
+    ],
+    "auto_detect_interface": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": false
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090",
+      "external_ui": "ui",
+      "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/gh-pages.zip",
+      "external_ui_download_detour": "Internet",
+      "secret": "aaaa al",
+      "default_mode": "rule"
+    }
+  }
+}
