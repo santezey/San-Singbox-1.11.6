@@ -63,10 +63,10 @@
         "Best Latency",
         "🇮🇩 (ID) google LLC.com",
         "🇮🇩 (ID) CV RumahWeb",
-        "🇮🇩 (ID) Amazon.com",
+        "🏴‍☠️ (SG) Amazon.com",
         "🇮🇩 (ID) alibaba.com",
         "🏴‍☠️ (SG) melbikomnas",
-        "🏴‍☠️ (SG) Digital Ocean",
+        "🏴‍☠️ (SG) oracle cloud",
         "🇲🇾 (MY) Gigabit Hosting",
         "direct"
       ]
@@ -77,10 +77,10 @@
       "outbounds": [
         "🇮🇩 (ID) google LLC.com",
         "🇮🇩 (ID) CV RumahWeb",
-        "🇮🇩 (ID) Amazon.com",
+        "🏴‍☠️ (SG) Amazon.com",
         "🇮🇩 (ID) alibaba.com",
         "🏴‍☠️ (SG) melbikomnas",
-        "🏴‍☠️ (SG) Digital Ocean",
+        "🏴‍☠️ (SG) oracle cloud",
         "🇲🇾 (MY) Gigabit Hosting",
         "direct"
       ],
@@ -115,14 +115,14 @@
     },
 {
       "type": "vless",
-      "tag": "🇮🇩 (ID) Amazon.com",
+      "tag": "🏴‍☠️ (SG) Amazon.com",
       "domain_strategy": "ipv4_only",
       "server": "udemy.com",
       "server_port": 443,
-      "uuid": "aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1",
+      "uuid": "b5bad0bc-2a31-4c34-a09f-d6b244a060c5",
       "tls": {
         "enabled": true,
-        "server_name": "privasi.bmkg.xyz",
+        "server_name": "nautica.foolvpn.me",
         "insecure": true
       },
       "multiplex": {
@@ -131,9 +131,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/Free-CF-Proxy-152.32.181.246-44070",
+        "path": "/54.169.229.188-443",
         "headers": {
-          "Host": "privasi.bmkg.xyz"
+          "Host": "nautica.foolvpn.me"
         },
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
@@ -219,14 +219,14 @@
     },
 {
       "type": "vless",
-      "tag": "🏴‍☠️ (SG) Digital Ocean",
+      "tag": "🏴‍☠️ (SG) oracle cloud",
       "domain_strategy": "ipv4_only",
       "server": "udemy.com",
       "server_port": 443,
-      "uuid": "aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1",
+      "uuid": "b5bad0bc-2a31-4c34-a09f-d6b244a060c5",
       "tls": {
         "enabled": true,
-        "server_name": "privasi.bmkg.xyz",
+        "server_name": "nautica.foolvpn.me",
         "insecure": true
       },
       "multiplex": {
@@ -235,9 +235,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/Free-CF-Proxy-104.248.145.216-443",
+        "path": "/213.35.108.135-12596",
         "headers": {
-          "Host": "privasi.bmkg.xyz"
+          "Host": "nautica.foolvpn.me"
         },
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
