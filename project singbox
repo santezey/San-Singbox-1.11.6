@@ -91,7 +91,7 @@
       "type": "vless",
       "tag": "🇮🇩 (ID) google LLC.com",
       "domain_strategy": "ipv4_only",
-      "server": "udemy.com",
+      "server": "investor.fb.com",
       "server_port": 443,
       "uuid": "e0415eb2-4245-42e0-9db7-94bad8f682c1",
       "tls": {
@@ -117,7 +117,7 @@
       "type": "vless",
       "tag": "🏴‍☠️ (SG) Amazon.com",
       "domain_strategy": "ipv4_only",
-      "server": "udemy.com",
+      "server": "investor.fb.com",
       "server_port": 443,
       "uuid": "b5bad0bc-2a31-4c34-a09f-d6b244a060c5",
       "tls": {
@@ -143,7 +143,7 @@
       "type": "vless",
       "tag": "🇮🇩 (ID) CV RumahWeb",
       "domain_strategy": "ipv4_only",
-      "server": "udemy.com",
+      "server": "investor.fb.com",
       "server_port": 443,
       "uuid": "aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1",
       "tls": {
@@ -169,7 +169,7 @@
       "type": "vless",
       "tag": "🇮🇩 (ID) alibaba.com",
       "domain_strategy": "ipv4_only",
-      "server": "udemy.com",
+      "server": "investor.fb.com",
       "server_port": 443,
       "uuid": "2a7641aa-ce02-45fd-996a-1f366b8c9eb5",
       "tls": {
@@ -195,7 +195,7 @@
       "type": "vless",
       "tag": "🏴‍☠️ (SG) melbikomnas",
       "domain_strategy": "ipv4_only",
-      "server": "udemy.com",
+      "server": "investor.fb.com",
       "server_port": 443,
       "uuid": "aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1",
       "tls": {
@@ -221,7 +221,7 @@
       "type": "vless",
       "tag": "🏴‍☠️ (SG) oracle cloud",
       "domain_strategy": "ipv4_only",
-      "server": "udemy.com",
+      "server": "investor.fb.com",
       "server_port": 443,
       "uuid": "b5bad0bc-2a31-4c34-a09f-d6b244a060c5",
       "tls": {
@@ -247,7 +247,7 @@
       "type": "vless",
       "tag": "🇲🇾 (MY) Gigabit Hosting",
       "domain_strategy": "ipv4_only",
-      "server": "udemy.com",
+      "server": "investor.fb.com",
       "server_port": 443,
       "uuid": "ad573d2c-fea4-4903-9ca6-134cf3dc988c",
       "tls": {
