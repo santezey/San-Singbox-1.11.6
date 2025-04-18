@@ -193,14 +193,14 @@
     },
 {
       "type": "vless",
-      "tag": "🏴‍☠️ (SG) melbikomnas",
+      "tag": "🏴‍☠️ (SG) Amazon Wc",
       "domain_strategy": "ipv4_only",
-      "server": "investor.fb.com",
+      "server": "ava.game.naver.com",
       "server_port": 443,
-      "uuid": "aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1",
+      "uuid": "cd7c4f74-de8a-41fb-9073-6924181b4207",
       "tls": {
         "enabled": true,
-        "server_name": "privasi.bmkg.xyz",
+        "server_name": "ava.game.naver.com.violetvpn.biz.id",
         "insecure": true
       },
       "multiplex": {
@@ -209,9 +209,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/Free-CF-Proxy-91.192.81.154-2053",
+        "path": "/id-amz",
         "headers": {
-          "Host": "privasi.bmkg.xyz"
+          "Host": "ava.game.naver.com.violetvpn.biz.id"
         },
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
