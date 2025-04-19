@@ -195,12 +195,12 @@
       "type": "vless",
       "tag": "🏴‍☠️ (SG) Amazon Wc",
       "domain_strategy": "ipv4_only",
-      "server": "ava.game.naver.com",
+      "server": "investor.fb.com",
       "server_port": 443,
       "uuid": "cd7c4f74-de8a-41fb-9073-6924181b4207",
       "tls": {
         "enabled": true,
-        "server_name": "ava.game.naver.com.violetvpn.biz.id",
+        "server_name": "investor.fb.com.violetvpn.biz.id",
         "insecure": true
       },
       "multiplex": {
@@ -211,7 +211,7 @@
         "type": "ws",
         "path": "/id-amz",
         "headers": {
-          "Host": "ava.game.naver.com.violetvpn.biz.id"
+          "Host": "investor.fb.com.violetvpn.biz.id"
         },
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
