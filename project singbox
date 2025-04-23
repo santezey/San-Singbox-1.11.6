@@ -96,7 +96,7 @@
       "uuid": "e0415eb2-4245-42e0-9db7-94bad8f682c1",
       "tls": {
         "enabled": true,
-        "server_name": "violetvpn.biz.id",
+        "server_name": "investor.fb.com.violetvpn.biz.id",
         "insecure": true
       },
       "multiplex": {
@@ -107,7 +107,7 @@
         "type": "ws",
         "path": "/id-gcp",
         "headers": {
-          "Host": "violetvpn.biz.id"
+          "Host": "investor.fb.com.violetvpn.biz.id"
         },
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
