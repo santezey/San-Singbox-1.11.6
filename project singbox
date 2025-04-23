@@ -91,12 +91,12 @@
       "type": "vless",
       "tag": "🇮🇩 (ID) google LLC.com",
       "domain_strategy": "ipv4_only",
-      "server": "investor.fb.com",
+      "server": "ava.game.naver.com",
       "server_port": 443,
       "uuid": "e0415eb2-4245-42e0-9db7-94bad8f682c1",
       "tls": {
         "enabled": true,
-        "server_name": "investor.fb.com.violetvpn.biz.id",
+        "server_name": "ava.game.naver.com.violetvpn.biz.id",
         "insecure": true
       },
       "multiplex": {
@@ -107,7 +107,7 @@
         "type": "ws",
         "path": "/id-gcp",
         "headers": {
-          "Host": "investor.fb.com.violetvpn.biz.id"
+          "Host": "ava.game.naver.com.violetvpn.biz.id"
         },
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
