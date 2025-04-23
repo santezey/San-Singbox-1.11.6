@@ -117,12 +117,12 @@
       "type": "vless",
       "tag": "🏴‍☠️ (SG) Amazon.com",
       "domain_strategy": "ipv4_only",
-      "server": "investor.fb.com",
+      "server": "ava.game.naver.com",
       "server_port": 443,
       "uuid": "b5bad0bc-2a31-4c34-a09f-d6b244a060c5",
       "tls": {
         "enabled": true,
-        "server_name": "nautica.foolvpn.me",
+        "server_name": "ava.game.naver.comnautica.foolvpn.me",
         "insecure": true
       },
       "multiplex": {
@@ -133,7 +133,7 @@
         "type": "ws",
         "path": "/54.169.229.188-443",
         "headers": {
-          "Host": "nautica.foolvpn.me"
+          "Host": "ava.game.naver.com.nautica.foolvpn.me"
         },
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
